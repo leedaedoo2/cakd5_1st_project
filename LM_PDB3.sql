@@ -3,20 +3,20 @@ update purprod set year = substr(구매일자,1,4);
 
 alter table purprod add month number;
 update purprod set year = substr(구매일자,5,2);
-
+create table purcust as
 select c.고객번호, p.제휴사, p.대분류코드, p.중분류코드, p.소분류코드, p.구매일자, c.성별, c.연령대, c.거주지역, p.year, p.month from purprod p, custdemo c where p.고객번호 = c.고객번호;
 
 alter table purcust add 분기 number(2);
 
-update purprod set 분기 = 1 where year = 2014 and month in (1,2,3);
-update purprod set 분기 = 2 where year = 2014 and month in (4,5,6);
-update purprod set 분기 = 3 where year = 2014 and month in (7,8,9);
-update purprod set 분기 = 4 where year = 2014 and month in (10,11,12);
+update purcust set 분기 = 1 where year = 2014 and month in (1,2,3);
+update purcust set 분기 = 2 where year = 2014 and month in (4,5,6);
+update purcust set 분기 = 3 where year = 2014 and month in (7,8,9);
+update purcust set 분기 = 4 where year = 2014 and month in (10,11,12);
 
-update purprod set 분기 = 5 where year = 2015 and month in (1,2,3);
-update purprod set 분기 = 6 where year = 2015 and month in (4,5,6);
-update purprod set 분기 = 7 where year = 2015 and month in (7,8,9);
-update purprod set 분기 = 8 where year = 2015 and month in (10,11,12);
+update purcust set 분기 = 5 where year = 2015 and month in (1,2,3);
+update purcust set 분기 = 6 where year = 2015 and month in (4,5,6);
+update purcust set 분기 = 7 where year = 2015 and month in (7,8,9);
+update purcust set 분기 = 8 where year = 2015 and month in (10,11,12);
 
 create table purcust2 as
 select 고객번호, 제휴사, 대분류코드, 중분류코드, 소분류코드, 성별, 연령대, 거주지역, 구매금액, 분기
