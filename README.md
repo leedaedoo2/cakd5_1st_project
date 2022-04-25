@@ -8,7 +8,6 @@
 군집에 따른 대응 방안을 세움으로써 고객들의 니즈를 충족시키고 구매 감소를 예방하는 솔루션을 구축하였습니다.
 
 - datasets: L사 멤버스 데이터
-- skills : Python (Pandas,Numpy,Matplotlib,Seaborn,Sklearn,Surprise)
-           Sql, JupyterNotebook
+- 사용모듈 : Python (Pandas,Numpy,Matplotlib,Seaborn,Sklearn,Surprise), Sql, JupyterNotebook, Colab
 
 
