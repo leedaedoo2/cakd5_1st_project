@@ -1,5 +1,5 @@
 
-## semi_project
+# semi_project
 프로젝트 기간: 2022.02.~
 
 [CAKD5 SEMI PROJECT]
@@ -8,11 +8,12 @@
 - 
 - 내용: 고객의 PainPoint를 발견하고 문제를 해결하기 위한 아이디어 기획 
 - datasets : GTZAN Dataset - Music Genre Classification 여러 장르의 오디오 파일과 분석을 위해 추출된 FEATURE파일들을 포함
-- 사용모듈: Python( Metplotlib, Pandas, numpy), 음원추출(Librosa)
+- 사용모듈: Python( Metplotlib, Pandas, numpy), 음원추출(Librosa)   
 
 
-## L사 멤버스 데이터 분석
+
 # 1st_cakd5_project
+### L사 멤버스 데이터 분석
 프로젝트 기간 : 2022.03.14 ~ 2022.04.04
 
 [CAKD5기 1차 프로젝트] 
